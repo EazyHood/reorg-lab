@@ -1,0 +1,361 @@
+{
+  "schemaVersion": 1,
+  "runId": "rl-1e4e5f8aae75",
+  "generatedAt": "2026-09-13T17:00:22.645Z",
+  "title": "Same height. Different history.",
+  "environment": {
+    "engine": "Hardhat 3.16.0 / EDR",
+    "compiler": "0.8.37+commit.f401782d.Emscripten.clang",
+    "node": "v24.16.0",
+    "chainId": 31337,
+    "network": "Fresh, in-process local EVM; no public RPC or fork",
+    "pinning": "EIP-1898 blockHash + requireCanonical"
+  },
+  "sourceDigest": "16f7135f19cf96ed4a3a9330f93d1e950fa16c93f287ea372047baf7c817e098",
+  "contract": {
+    "name": "TaskBoard",
+    "address": "0x5fbdb2315678afecb367f032d93f642f64180aa3",
+    "taskIds": [
+      7,
+      9,
+      42,
+      99
+    ]
+  },
+  "experiment": {
+    "baseline": {
+      "number": 1,
+      "hash": "0xd3bf8794a3fc5f001315eb217c2a1bfd8ffa740f5cf81a5d5a4c914effd3faa2",
+      "parentHash": "0x87f846a56f8379a8b9a199ed06c1c429fe59beb2377670bf1b83426c77928f6b"
+    },
+    "branchA": [
+      {
+        "number": 2,
+        "hash": "0x6a37efe7d4a6045f548399111637f3321c60d353013ea39b6ad78678c4aab915",
+        "parentHash": "0xd3bf8794a3fc5f001315eb217c2a1bfd8ffa740f5cf81a5d5a4c914effd3faa2"
+      },
+      {
+        "number": 3,
+        "hash": "0xfb8f50b39d70d15bb84e4d1b3c88974c7e9daa78f1633c677c924c414d9788b4",
+        "parentHash": "0x6a37efe7d4a6045f548399111637f3321c60d353013ea39b6ad78678c4aab915"
+      }
+    ],
+    "branchB": [
+      {
+        "number": 2,
+        "hash": "0x1d81b1e60bcc244e3f76baa473fbf43a3035a30c2774f50d3363fced42682830",
+        "parentHash": "0xd3bf8794a3fc5f001315eb217c2a1bfd8ffa740f5cf81a5d5a4c914effd3faa2"
+      },
+      {
+        "number": 3,
+        "hash": "0x15da9b43db2853b3f010650c8ece038474fc3f92967fe62cad078f01f84a0ccf",
+        "parentHash": "0x1d81b1e60bcc244e3f76baa473fbf43a3035a30c2774f50d3363fced42682830"
+      }
+    ],
+    "snapshotRestored": true,
+    "sameHeight": true,
+    "differentHash": true,
+    "databasePreserved": true,
+    "databaseDigestBefore": "23ee364b07a95c029d674120dc23c678c9845e3ead86b964f86ec53cf0a0d767",
+    "databaseDigestAfterNodeRevert": "23ee364b07a95c029d674120dc23c678c9845e3ead86b964f86ec53cf0a0d767",
+    "commonAncestor": {
+      "number": 1,
+      "hash": "0xd3bf8794a3fc5f001315eb217c2a1bfd8ffa740f5cf81a5d5a4c914effd3faa2",
+      "parentHash": "0x87f846a56f8379a8b9a199ed06c1c429fe59beb2377670bf1b83426c77928f6b"
+    },
+    "removedRows": 2,
+    "replayedRows": 2
+  },
+  "truth": {
+    "head": {
+      "number": 3,
+      "hash": "0x15da9b43db2853b3f010650c8ece038474fc3f92967fe62cad078f01f84a0ccf",
+      "parentHash": "0x1d81b1e60bcc244e3f76baa473fbf43a3035a30c2774f50d3363fced42682830"
+    },
+    "tasks": {
+      "7": true,
+      "9": true,
+      "42": false,
+      "99": false
+    },
+    "completedCount": 2,
+    "rows": [
+      {
+        "key": "0x1d81b1e60bcc244e3f76baa473fbf43a3035a30c2774f50d3363fced42682830:0x8a1b7d6ac79ac3e17964d4388e10a2d220823dbec7c78527716a657eec5a7f68:0",
+        "blockNumber": 2,
+        "blockHash": "0x1d81b1e60bcc244e3f76baa473fbf43a3035a30c2774f50d3363fced42682830",
+        "parentHash": "0xd3bf8794a3fc5f001315eb217c2a1bfd8ffa740f5cf81a5d5a4c914effd3faa2",
+        "transactionHash": "0x8a1b7d6ac79ac3e17964d4388e10a2d220823dbec7c78527716a657eec5a7f68",
+        "logIndex": 0,
+        "taskId": 7,
+        "wasCompleted": false,
+        "isCompleted": true
+      },
+      {
+        "key": "0x15da9b43db2853b3f010650c8ece038474fc3f92967fe62cad078f01f84a0ccf:0x262330430bc829d772af7dd23f93ec5584d9a0008262a7ccbd3db3db45e3bc29:0",
+        "blockNumber": 3,
+        "blockHash": "0x15da9b43db2853b3f010650c8ece038474fc3f92967fe62cad078f01f84a0ccf",
+        "parentHash": "0x1d81b1e60bcc244e3f76baa473fbf43a3035a30c2774f50d3363fced42682830",
+        "transactionHash": "0x262330430bc829d772af7dd23f93ec5584d9a0008262a7ccbd3db3db45e3bc29",
+        "logIndex": 0,
+        "taskId": 9,
+        "wasCompleted": false,
+        "isCompleted": true
+      }
+    ],
+    "digest": "eb206da89c0ac74246ad563248b50a75448b1d2e1882cd510d786191015c6774",
+    "source": "TaskBoard storage via eth_call with EIP-1898 blockHash + requireCanonical; eth_getLogs pinned to each canonical blockHash. Target hash checked before and after."
+  },
+  "projections": [
+    {
+      "id": "height-only",
+      "label": "Height-only cursor",
+      "outcome": "diverged",
+      "tasks": {
+        "7": false,
+        "9": false,
+        "42": true,
+        "99": true
+      },
+      "completedCount": 2,
+      "rows": [
+        {
+          "key": "0x6a37efe7d4a6045f548399111637f3321c60d353013ea39b6ad78678c4aab915:0xf4c23c6db0c881cd68af9b081bb111ae810cbaed870f31e92705efe121133c9f:0",
+          "blockNumber": 2,
+          "blockHash": "0x6a37efe7d4a6045f548399111637f3321c60d353013ea39b6ad78678c4aab915",
+          "parentHash": "0xd3bf8794a3fc5f001315eb217c2a1bfd8ffa740f5cf81a5d5a4c914effd3faa2",
+          "transactionHash": "0xf4c23c6db0c881cd68af9b081bb111ae810cbaed870f31e92705efe121133c9f",
+          "logIndex": 0,
+          "taskId": 42,
+          "wasCompleted": false,
+          "isCompleted": true
+        },
+        {
+          "key": "0xfb8f50b39d70d15bb84e4d1b3c88974c7e9daa78f1633c677c924c414d9788b4:0x858584c87cbdd1eb242720feae76e55db5b26646015b1a5e2b66ff223acf46c4:0",
+          "blockNumber": 3,
+          "blockHash": "0xfb8f50b39d70d15bb84e4d1b3c88974c7e9daa78f1633c677c924c414d9788b4",
+          "parentHash": "0x6a37efe7d4a6045f548399111637f3321c60d353013ea39b6ad78678c4aab915",
+          "transactionHash": "0x858584c87cbdd1eb242720feae76e55db5b26646015b1a5e2b66ff223acf46c4",
+          "logIndex": 0,
+          "taskId": 99,
+          "wasCompleted": false,
+          "isCompleted": true
+        }
+      ],
+      "orphanKeys": [
+        "0x6a37efe7d4a6045f548399111637f3321c60d353013ea39b6ad78678c4aab915:0xf4c23c6db0c881cd68af9b081bb111ae810cbaed870f31e92705efe121133c9f:0",
+        "0xfb8f50b39d70d15bb84e4d1b3c88974c7e9daa78f1633c677c924c414d9788b4:0x858584c87cbdd1eb242720feae76e55db5b26646015b1a5e2b66ff223acf46c4:0"
+      ],
+      "missingKeys": [
+        "0x1d81b1e60bcc244e3f76baa473fbf43a3035a30c2774f50d3363fced42682830:0x8a1b7d6ac79ac3e17964d4388e10a2d220823dbec7c78527716a657eec5a7f68:0",
+        "0x15da9b43db2853b3f010650c8ece038474fc3f92967fe62cad078f01f84a0ccf:0x262330430bc829d772af7dd23f93ec5584d9a0008262a7ccbd3db3db45e3bc29:0"
+      ],
+      "duplicateKeys": [],
+      "stateMatches": false,
+      "rowsMatch": false,
+      "digest": "f81d6ca4f07a573c3f32e60f6d647db8259d67b1edd1c84bef5cdf69d0e16138",
+      "explanation": "The head number did not increase, so this deliberately flawed adapter fetched no new rows. It retained branch A."
+    },
+    {
+      "id": "recovering",
+      "label": "Rollback + replay",
+      "outcome": "matched",
+      "tasks": {
+        "7": true,
+        "9": true,
+        "42": false,
+        "99": false
+      },
+      "completedCount": 2,
+      "rows": [
+        {
+          "key": "0x1d81b1e60bcc244e3f76baa473fbf43a3035a30c2774f50d3363fced42682830:0x8a1b7d6ac79ac3e17964d4388e10a2d220823dbec7c78527716a657eec5a7f68:0",
+          "blockNumber": 2,
+          "blockHash": "0x1d81b1e60bcc244e3f76baa473fbf43a3035a30c2774f50d3363fced42682830",
+          "parentHash": "0xd3bf8794a3fc5f001315eb217c2a1bfd8ffa740f5cf81a5d5a4c914effd3faa2",
+          "transactionHash": "0x8a1b7d6ac79ac3e17964d4388e10a2d220823dbec7c78527716a657eec5a7f68",
+          "logIndex": 0,
+          "taskId": 7,
+          "wasCompleted": false,
+          "isCompleted": true
+        },
+        {
+          "key": "0x15da9b43db2853b3f010650c8ece038474fc3f92967fe62cad078f01f84a0ccf:0x262330430bc829d772af7dd23f93ec5584d9a0008262a7ccbd3db3db45e3bc29:0",
+          "blockNumber": 3,
+          "blockHash": "0x15da9b43db2853b3f010650c8ece038474fc3f92967fe62cad078f01f84a0ccf",
+          "parentHash": "0x1d81b1e60bcc244e3f76baa473fbf43a3035a30c2774f50d3363fced42682830",
+          "transactionHash": "0x262330430bc829d772af7dd23f93ec5584d9a0008262a7ccbd3db3db45e3bc29",
+          "logIndex": 0,
+          "taskId": 9,
+          "wasCompleted": false,
+          "isCompleted": true
+        }
+      ],
+      "orphanKeys": [],
+      "missingKeys": [],
+      "duplicateKeys": [],
+      "stateMatches": true,
+      "rowsMatch": true,
+      "digest": "eb206da89c0ac74246ad563248b50a75448b1d2e1882cd510d786191015c6774",
+      "explanation": "Compare stored block hashes, find the common ancestor, remove orphaned rows, replay branch B, then commit the complete snapshot."
+    },
+    {
+      "id": "rebuild",
+      "label": "Clean rebuild",
+      "outcome": "matched",
+      "tasks": {
+        "7": true,
+        "9": true,
+        "42": false,
+        "99": false
+      },
+      "completedCount": 2,
+      "rows": [
+        {
+          "key": "0x1d81b1e60bcc244e3f76baa473fbf43a3035a30c2774f50d3363fced42682830:0x8a1b7d6ac79ac3e17964d4388e10a2d220823dbec7c78527716a657eec5a7f68:0",
+          "blockNumber": 2,
+          "blockHash": "0x1d81b1e60bcc244e3f76baa473fbf43a3035a30c2774f50d3363fced42682830",
+          "parentHash": "0xd3bf8794a3fc5f001315eb217c2a1bfd8ffa740f5cf81a5d5a4c914effd3faa2",
+          "transactionHash": "0x8a1b7d6ac79ac3e17964d4388e10a2d220823dbec7c78527716a657eec5a7f68",
+          "logIndex": 0,
+          "taskId": 7,
+          "wasCompleted": false,
+          "isCompleted": true
+        },
+        {
+          "key": "0x15da9b43db2853b3f010650c8ece038474fc3f92967fe62cad078f01f84a0ccf:0x262330430bc829d772af7dd23f93ec5584d9a0008262a7ccbd3db3db45e3bc29:0",
+          "blockNumber": 3,
+          "blockHash": "0x15da9b43db2853b3f010650c8ece038474fc3f92967fe62cad078f01f84a0ccf",
+          "parentHash": "0x1d81b1e60bcc244e3f76baa473fbf43a3035a30c2774f50d3363fced42682830",
+          "transactionHash": "0x262330430bc829d772af7dd23f93ec5584d9a0008262a7ccbd3db3db45e3bc29",
+          "logIndex": 0,
+          "taskId": 9,
+          "wasCompleted": false,
+          "isCompleted": true
+        }
+      ],
+      "orphanKeys": [],
+      "missingKeys": [],
+      "duplicateKeys": [],
+      "stateMatches": true,
+      "rowsMatch": true,
+      "digest": "eb206da89c0ac74246ad563248b50a75448b1d2e1882cd510d786191015c6774",
+      "explanation": "A new index starts at the pre-event anchor and independently scans canonical block hashes. It is a reference reconstruction, not the recovery path."
+    }
+  ],
+  "checks": [
+    {
+      "id": "normal",
+      "name": "Normal indexing",
+      "status": "pass",
+      "expected": "pass",
+      "expectationMet": true,
+      "detail": "Before the branch switch, the projection agrees with contract storage and canonical event identities."
+    },
+    {
+      "id": "branch-switch",
+      "name": "Branch replacement exercised",
+      "status": "pass",
+      "expected": "pass",
+      "expectationMet": true,
+      "detail": "Node restore returned true; A/B reach the same height with distinct block hashes. The on-disk index stayed byte-for-byte unchanged when only the node reverted."
+    },
+    {
+      "id": "detect",
+      "name": "Expose the flawed projection",
+      "status": "pass",
+      "expected": "pass",
+      "expectationMet": true,
+      "detail": "Height-only indexing retains two orphaned rows and misses two canonical rows, despite the same completed-task total."
+    },
+    {
+      "id": "recover",
+      "name": "Recover state and exact rows",
+      "status": "pass",
+      "expected": "pass",
+      "expectationMet": true,
+      "detail": "Recovered task state and row identities match both pinned contract truth and a clean rebuild."
+    },
+    {
+      "id": "replay",
+      "name": "Replay is idempotent",
+      "status": "pass",
+      "expected": "pass",
+      "expectationMet": true,
+      "detail": "A second sync at the same canonical head preserves the complete persisted snapshot and adds zero rows."
+    },
+    {
+      "id": "restart",
+      "name": "Restart from the stale disk index",
+      "status": "pass",
+      "expected": "pass",
+      "expectationMet": true,
+      "detail": "A fresh adapter instance loads A from JSON on disk and recovers to the same B state and rows; no in-memory recovery state is carried over."
+    },
+    {
+      "id": "depth",
+      "name": "Insufficient rollback depth",
+      "status": "inconclusive",
+      "expected": "inconclusive",
+      "expectationMet": true,
+      "detail": "No common ancestor within 1 block(s); full reconstruction required. The old index must remain unchanged; no claim of recovery."
+    },
+    {
+      "id": "rpc",
+      "name": "Interrupted RPC read",
+      "status": "inconclusive",
+      "expected": "inconclusive",
+      "expectationMet": true,
+      "detail": "Injected RPC failure while reading canonical logs. The candidate snapshot is discarded; the persisted index stays unchanged."
+    },
+    {
+      "id": "adapter",
+      "name": "Second projector example",
+      "status": "pass",
+      "expected": "pass",
+      "expectationMet": true,
+      "detail": "The exported Projector interface runs an independent transition counter: after reopening #7, the result is 1 and agrees with contract storage."
+    }
+  ],
+  "secondExample": {
+    "name": "Completed task total",
+    "description": "A separate delta-based projector consumes the canonical stream and then a new #7 → open transition at block 4. The contract counter is read at that exact block hash.",
+    "value": 1,
+    "contractValue": 1,
+    "matches": true
+  },
+  "trace": [
+    {
+      "step": "01 / Anchor",
+      "detail": "Deploy TaskBoard at block 1; snapshot the node before any task event."
+    },
+    {
+      "step": "02 / Branch A",
+      "detail": "Complete tasks #42 and #99. Persist both indexers at A’s head, including row identities and block checkpoints."
+    },
+    {
+      "step": "03 / Replace history",
+      "detail": "Restore only the node. Complete #7 and #9 on branch B; keep A’s persisted index untouched. Both heads are block 3."
+    },
+    {
+      "step": "04 / Reconcile",
+      "detail": "Locate the common ancestor at block 1. Remove 2 A rows and replay 2 B rows."
+    },
+    {
+      "step": "05 / Challenge the conclusion",
+      "detail": "Run replay, stale-disk restart, shallow-history and interrupted-RPC controls. Exercise a separate completion-count projector on a subsequent block."
+    }
+  ],
+  "limitations": [
+    "This is controlled branch replacement using snapshot/revert on one local EVM. It does not test consensus, network propagation, public-chain finality or a live reorg.",
+    "The reference indexers cover TaskBoard event streams and JSON-file persistence. The adapter interface is not a universal repair layer for arbitrary databases.",
+    "The browser displays a saved execution. It cannot execute the Node/EDR runner; run the documented local command and import its JSON to inspect your own result.",
+    "Negative controls deliberately produce inconclusive results. A shallow rollback window or failed RPC read cannot establish recovery.",
+    "Contract truth covers the four known task IDs and completedCount. Row comparison additionally checks missing, orphaned and duplicate event identities."
+  ],
+  "artifacts": {
+    "json": "reports/latest.json",
+    "html": "reports/latest.html",
+    "database": ".runs/latest/"
+  }
+}
