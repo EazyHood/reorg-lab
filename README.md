@@ -8,6 +8,12 @@ The web interface is a **saved-run viewer**, not an EVM in your browser. You can
 
 [Open the interactive viewer](https://eazyhood.github.io/reorg-lab/) · [Read the six-page pitch](https://eazyhood.github.io/reorg-lab/reorg-lab-pitch.pdf) · [Source repository](https://github.com/EazyHood/reorg-lab)
 
+[Watch the 1:39 demonstration](https://www.youtube.com/watch?v=er8e-Py4rnk) · [English captions](docs/media/demo.en.srt)
+
+The narrated video is an edited walkthrough assembled from genuine browser captures of the saved run `rl-1e4e5f8aae75`, with explanatory cards and synthetic ElevenLabs narration. It is not a continuous screen recording or a live EVM execution in the browser. Captions are also burned into the video.
+
+![Actual saved-run viewer: the flawed projection has four incorrect task states despite the matching total](docs/screenshots/flawed-projection.png)
+
 ## Run the real experiment
 
 Prerequisite: **Node.js 24** (developed on 24.16.0) with npm. From this directory:
